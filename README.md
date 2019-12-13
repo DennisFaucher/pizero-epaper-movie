@@ -15,7 +15,7 @@ Install the Waveshare e-Paper drivers using these instructions: https://www.wave
 
 Copy my christmas.py to the e-Paper/Pi/python/examples directory
 
-Copy my image folders, or your own images folders, to the e-Paper/Pi/python/pic directory. You can make your own image folders by extratcing images from a movie with VLC using these instrcutions: https://www.isimonbrown.co.uk/vlc-export-frames/
+Copy my image folders (Unzip Movie-Images.zip), or your own images folders, to the e-Paper/Pi/python/pic directory. You can make your own image folders by extratcing images from a movie with VLC using these instrcutions: https://www.isimonbrown.co.uk/vlc-export-frames/
 
 Test by executing "python3 christmas.py" from the e-Paper/Pi/python/examples directory
 
