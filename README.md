@@ -7,3 +7,18 @@ Raspberry Pi Zero W. WITH PINS as I am terrible at soldering. I purchased mine h
 
 Waveshare 2.13" e-Paper Dsiplay HAT. I purchased mine here: https://www.aliexpress.com/item/32810080308.html
 ## Software
+Install Raspbian OS from here https://www.raspberrypi.org/downloads/raspbian/ and use these instructions: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+
+Connect your Raspberry Pi Zero to keyboard, mouse, HDMI monitor and power to run through the usual Linux setup. I picked up all the necessary cable/power accesories here: https://www.sparkfun.com/products/14298
+
+Install the Waveshare e-Paper drivers using these instructions: https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT. Rename the awfully named directory "RaspberryPi\&JetsonNano" to just "Pi".
+
+Copy my christmas.py to the e-Paper/Pi/python/examples directory
+
+Copy my image folders, or your own images folders, to the e-Paper/Pi/python/pic directory. You can make your own image folders by extratcing images from a movie with VLC using these instrcutions: https://www.isimonbrown.co.uk/vlc-export-frames/
+
+Test by executing "python3 christmas.py" from the e-Paper/Pi/python/examples directory
+
+To autorun on boot, add this line to your /etc/rc.local: "python3 /home/pi/e-Paper/Pi/python/examples/christmas.py > /dev/null 2>&1 &"
+
+Enjoy.
